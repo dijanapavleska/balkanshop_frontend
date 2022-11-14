@@ -1,6 +1,21 @@
 
 import { Container, Button } from "react-bootstrap";
+import { useCart } from 'react-use-cart';
 export default function Cart() {
+
+    const {
+        isEmpty,
+        totatlUniqueItems,
+        items,
+        totalItems,
+        cartTotal,
+        updateItemQuantity,
+        removeItem,
+        emptyCart
+
+    } = useCart()
+
+
     return (
 
 
