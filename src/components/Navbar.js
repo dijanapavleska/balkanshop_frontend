@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "../App.css";
+import Cart from './Cart';
+import { Container } from 'react-bootstrap'
 
 import Search from './Search';
 function Navbar() {
@@ -7,7 +9,7 @@ function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
     return (
 
-        <div className="container">
+        <Container>
 
             <div className='row'>
                 <div className="col-9 col-md-4">
@@ -24,14 +26,17 @@ function Navbar() {
                         <a className='col-12 col-md-2' href='/register'>Register</a>
                         <a className='col-12 col-md-2' href='/login'>Login</a>
                         <a className='col-12 col-md-2' href='/contacts'>Contacts</a>
-                        <button className='col-12 col-md-2'>Add to cart</button>
+                        {/* <button className='col-12 col-md-2'>Add to cart</button> */}
+                        <Cart />
                     </div>
+
+
 
 
                 </div>
             </div>
 
-        </div>
+        </Container>
     )
 }
 
