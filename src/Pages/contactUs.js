@@ -1,19 +1,17 @@
-import React from 'react'
-import {Form, Field} from 'simple-react-form'
+import React, { Component } from 'react';
 
 
-class PostsCreate extends React.Component {
-  state = {}
 
+export class ContactUs extends Component {
   render() {
     return (
-      <div>
-        <Form state={this.state} onChange={state => this.setState(state)}>
-          <Field fieldName="name" label="Name" type='text' />
-    
-        </Form>
-        <p>My name is {this.state.name}</p>
-      </div>
+      <form>
+        <container>
+          <h1>Form</h1>
+        </container>
+      </form>
     )
   }
 }
+
+export default ContactUs
