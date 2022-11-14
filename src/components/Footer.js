@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import contactUs from '../Pages/ContactUs';
+
 
 const Footer = () => {
     return (
@@ -40,7 +40,7 @@ const Footer = () => {
                         <a href="/#"><i class='bi bi-instagram'></i></a>
 
                     </div>
-                    <contactUs />
+
                 </div>
 
 

@@ -1,5 +1,5 @@
 
-import { Container, Button } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap";
 export default function Cart() {
     return (
 

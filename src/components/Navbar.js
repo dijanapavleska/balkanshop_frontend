@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../App.css";
 import Cart from './Cart';
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap';
 
 import Search from './Search';
 function Navbar() {
