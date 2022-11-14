@@ -1,24 +1,21 @@
 
 import { Container, Button } from "react-bootstrap";
 import { useCart } from 'react-use-cart';
+import Cards from "./Cards";
 export default function Cart() {
 
     const {
         isEmpty,
-        totatlUniqueItems,
+        totalUniqueItems,
         items,
         totalItems,
         cartTotal,
         updateItemQuantity,
         removeItem,
-        emptyCart
-
-    } = useCart()
-
-
+        emptyCart,
+    } = useCart();
+    // if (isEmpty) return <h5 className='text-center py-5'>My Cart is Empty.</h5>
     return (
-
-
         <Button style={{
             width: '3rem', height: '3rem', position: 'relative', color: 'green', margin: '0em 0em 0em 7em'
         }}
@@ -38,6 +35,5 @@ export default function Cart() {
                     transform: 'translate(25%, 25%)',
                 }}>3</div>
         </Button >
-
     )
 }
