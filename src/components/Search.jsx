@@ -23,8 +23,11 @@ function Search() {
     }
 
     return (
-        <input onChange={updateKeyword} type="text" onKeyDown={handleClick} placeholder='Search...' />
+        <>
+          <input onChange={updateKeyword} type="text" onKeyDown={handleClick} placeholder='Search...' />
+        </>
     )
+
 }
 
 
