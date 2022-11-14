@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import contactUs from './Pages/contactUs';
 
 function App() {
   return (
