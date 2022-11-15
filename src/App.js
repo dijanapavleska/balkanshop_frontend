@@ -8,7 +8,7 @@ import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import Home from "./Pages/Home.jsx";
 import CartContext from "./CartContext";
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 
 
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Context.Provider value={{ cart, setCart }}>
+      <CartContext.Provider value={{ cart, setCart }}>
         <div className="App">
           <Navbar />
           <Routes>
@@ -29,7 +29,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </Context.Provider>
+      </CartContext.Provider>
     </>
   );
 }
