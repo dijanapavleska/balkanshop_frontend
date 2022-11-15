@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
-
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='container'>
+        <div className='footer'>
             <div className='row'>
                 {/* Column1 */}
                 <div className="col-12 col-md-3">
@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className='col-12 col-md-3'>
                     <h4>Company</h4>
                     <ul className='footer-box ps-2'>
-                        <li><a href="#">About Us</a></li>
+                        <li><Link to="/about-us">About Us</Link></li>
                         <li><a href="#">General Terms and Conditions</a></li>
-                        <li><a href="#">Contact Form</a></li>
+                        <li><Link to="/contact-us">Contact Form</Link></li>
                     </ul>
                 </div>
                 {/* COlumn2 */}
