@@ -2,7 +2,14 @@
 import { Container, Button } from "react-bootstrap";
 import { useCart } from 'react-use-cart';
 import Cards from "./Cards";
+import CartContext from "../CartContext";
+
+
 export default function Cart() {
+
+    // const { cart, setCart } = useContext(CartContext)
+
+
 
 
     return (
