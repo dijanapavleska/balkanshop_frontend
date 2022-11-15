@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='container' style={{marginTop: '4rem'}}>
             <div className='row'>
                 {/* Column1 */}
                 <div className="col-12 col-md-3">
