@@ -24,7 +24,10 @@ function Search() {
 
     return (
         <>
-          <input onChange={updateKeyword} type="text" onKeyDown={handleClick} placeholder='Search...' />
+        <div class="form-group search-form-group">
+            <input className='search-input form-control' onChange={updateKeyword} type="text" onKeyDown={handleClick} placeholder='Search...' />
+            <i className="bi bi-search"></i>
+        </div>
         </>
     )
 
