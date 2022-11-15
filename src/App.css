@@ -96,7 +96,7 @@ a:hover {
 
 .thumbnail {
   background-color: black;
-  width: 250px;
+  width: 100%;
   height: 200px;
   display: inline-block;
   /* makes it fit in like an <img> */
