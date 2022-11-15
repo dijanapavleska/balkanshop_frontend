@@ -1,0 +1,14 @@
+.container.border {
+    height: 100vh;
+    margin: 1em 4em;
+}
+
+.about {
+    padding: 5rem 3rem 3rem 3rem;
+    background: #f8f8f8;
+}
+
+.row {
+    display: flex;
+
+}

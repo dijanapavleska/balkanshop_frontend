@@ -1,8 +1,11 @@
+import React from "react";
+import { BrowserRouter, Routes, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./Pages/ContactUs";
+import AboutUs from "./Pages/AboutUs";
 import Home from "./Pages/Home.jsx";
 import CartContext from "./CartContext";
 import { useState } from "react";
@@ -15,17 +18,19 @@ function App() {
   const [cart, setCart] = useState([])
 
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
-      <div className="App">
-
-        <Navbar />
-        <Home />
-        <div>
+    <>
+      <Context.Provider value={{ cart, setCart }}>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/contact-us' element={<ContactUs />} />
+          </Routes>
           <Footer />
-          <ContactUs />
         </div>
-      </div>
-    </CartContext.Provider >
+      </Context.Provider>
+    </>
   );
 }
 

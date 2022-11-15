@@ -1,3 +1,5 @@
+import "./styleForm.css";
+
 const ContactUs = () => {
   return (
     <div className="container border" style={{

@@ -9,7 +9,7 @@ function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
     return (
 
-        <Container>
+        <Container className='Navbar'>
 
             <div className='row'>
                 <div className="col-9 col-md-4">
@@ -22,11 +22,11 @@ function Navbar() {
                 </div>
                 <div className={`col-12 col-md-8 links d-md-block ${showLinks ? "" : "d-none"}`} >
                     <div className="row">
-                        <a className='col-12 col-md-2' href='/home'>Home</a>
+                        <a className='col-12 col-md-2' href='/'>Home</a>
                         <a className='col-12 col-md-2' href='/register'>Register</a>
                         <a className='col-12 col-md-2' href='/login'>Login</a>
                         <a className='col-12 col-md-2' href='/contacts'>Contacts</a>
-                        {/* <button className='col-12 col-md-2'>Add to cart</button> */}
+
                         <Cart />
                     </div>
 
