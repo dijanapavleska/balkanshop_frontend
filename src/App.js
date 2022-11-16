@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Switch, Route, Link, useLocation } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
@@ -9,6 +9,8 @@ import AboutUs from "./Pages/AboutUs";
 import Home from "./Pages/Home.jsx";
 
 function App() {
+  const location = useLocation();
+
   return (
     <>
       <div className="App">
@@ -18,7 +20,7 @@ function App() {
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contact-us' element={<ContactUs />} />
         </Routes>
-        <Footer />
+        {location.pathname !== '/contact-us' && <Footer />}
       </div>
     </>
   );

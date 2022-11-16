@@ -3,6 +3,7 @@ import "../App.css";
 import Cart from './Cart';
 import "./Navbar.css";
 import { Container } from 'react-bootstrap';
+// import logo from "../images/background-imgs/b.png";
 
 import Search from './Search';
 function Navbar() {
@@ -12,10 +13,12 @@ function Navbar() {
 
         <div className='Navbar'>
             <div className='container'>
+                {/* <img src={logo} alt="logo" className='logo' /> */}
+
 
                 <div className='row d-flex align-items-center'>
                     <div className="col-md-2">
-                        LOGO
+
                     </div>
                     <div className="col-9 col-md-3">
                         <Search />
