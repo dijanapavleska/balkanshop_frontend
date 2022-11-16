@@ -1,14 +1,16 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import logo from "../images/background-imgs/logo.png";
 
 const Footer = () => {
     return (
-        <div className='container' style={{marginTop: '4rem'}}>
+        <footer className='footer'>
+        <div className='container footer' style={{marginTop: '4rem'}}>
             <div className='row'>
                 {/* Column1 */}
-                <div className="col-12 col-md-3">
-                    LOGO
+                <div className="col-12 col-md-4">
+                    <img src={logo} alt="logo" className='logo' />
                 </div>
                 <div className='col-12 col-md-3'>
                     <h4>Company</h4>
@@ -31,13 +33,13 @@ const Footer = () => {
                     </ul>
                 </div>
                 {/* COlumn2 */}
-                <div className='col-12 col-md-3'>
+                <div className='col-12 col-md-2'>
                     <h4>Follow us</h4>
                     <div className='d-flex justify-content-around'>
 
-                        <a href="#"><i class='bi bi-facebook'></i></a>
-                        <a href="#"><i class='bi bi-twitter'></i></a>
-                        <a href="/#"><i class='bi bi-instagram'></i></a>
+                        <a href="#"><i className='bi bi-facebook'></i></a>
+                        <a href="#"><i className='bi bi-twitter'></i></a>
+                        <a href="/#"><i className='bi bi-instagram'></i></a>
 
                     </div>
 
@@ -53,6 +55,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        </footer>
     )
 }
 export default Footer;

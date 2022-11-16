@@ -70,6 +70,7 @@ const Cards = () => {
     return (
 
         <>
+<<<<<<< HEAD
 
             {
                 productData.map(product => {
@@ -100,6 +101,16 @@ const Cards = () => {
                                     }}>Add to Cart</button>
                                 </div>
                             </div>
+=======
+            <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
+                <div className="card h-100 shadow rounded">
+                    <div className="thumbnail" style={{ backgroundImage: `url(${props.img})` }}></div>
+                    {/* <img src={props.img} alt="" className="card-img-top" /> */}
+                    <div className="card-body">
+                        <div className="d-flex justify-content-between">
+                            <h5 className="card-title">{props.title}</h5>
+                            <span className="fw-bolder">${props.price}</span>
+>>>>>>> dijana
                         </div>
                     </div >)
 

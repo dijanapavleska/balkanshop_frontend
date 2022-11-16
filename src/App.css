@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+h4 {
+  font-size: 1.2rem !important;
+}
+
 a {
   text-decoration: none !important;
   color: initial !important;
@@ -135,4 +139,11 @@ a:hover {
 /* add padding  */
 .search-form-group input {
   padding-left: 35px;
+}
+
+.logo {
+  width: 300px;
+  height: 150px;
+  display: flex;
+
 }

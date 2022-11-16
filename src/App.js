@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Switch, Route, Link, useLocation } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
@@ -17,6 +17,8 @@ function App() {
 
   const [cart, setCart] = useState([])
 
+  const location = useLocation();
+
   return (
     <>
       <CartContext.Provider value={{ cart, setCart }}>
@@ -27,7 +29,7 @@ function App() {
             <Route path='/about-us' element={<AboutUs />} />
             <Route path='/contact-us' element={<ContactUs />} />
           </Routes>
-          <Footer />
+          {location.pathname !== '/contact-us' && <Footer />}
         </div>
       </CartContext.Provider>
     </>
