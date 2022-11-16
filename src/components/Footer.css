@@ -3,6 +3,14 @@
     margin-top: 2em;
 }
 
+.logo-footer {
+    height: 110px;
+}
+
+a:link {
+    color: #00B5A2;
+}
+
 
 /* .footer {
     background-color: #24262b;

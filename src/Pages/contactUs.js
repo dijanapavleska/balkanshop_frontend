@@ -8,7 +8,7 @@ const ContactUs = () => {
     //   backgroundSize: 'cover',
     // }}
     // >
-    <div className="overlay">
+    <div className="overlay contact-us" >
 
       <form>
         <h3 className="form-h1">Contact</h3>

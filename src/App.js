@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Switch, Route, Link, useLocation } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/react-fontawesome";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./Pages/ContactUs";

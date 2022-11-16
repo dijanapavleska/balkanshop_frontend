@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import logo from "../images/background-imgs/logo.png";
+import logo from "../images/background-imgs/balkan.png";
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='row'>
                 {/* Column1 */}
                 <div className="col-12 col-md-4">
-                    <img src={logo} alt="logo" className='logo' />
+                    <img src={logo} alt="logo" className='logo-footer' />
                 </div>
                 <div className='col-12 col-md-3'>
                     <h4>Company</h4>
