@@ -7,7 +7,7 @@ const Cards = () => {
     const { cart, setCart } = useContext(CartContext)
 
 
-
+    // fetching data from API endpoint (products)
     const [productData, setProductData] = useState([])
 
     const loadProductData = async () => {
@@ -41,7 +41,10 @@ const Cards = () => {
     }
 
 
-    // increment and decrement button
+
+
+
+    // increment and decrement button for quanity
 
     const [amount, setAmount] = useState(1)
     const [price, setPrice] = useState(Number(productData.price))
@@ -76,18 +79,21 @@ const Cards = () => {
                             <div className="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h5 className="card-title">{product.name}</h5>
-                                    <span className="fw-bolder">${product.price}</span>
+                                    <span className="fw-bolder">Total price: {product.price}</span>
                                 </div>
                                 <div className="">
-                                    <p className="card-text">{product.stock}</p>
+                                    <p className="card-text">{product.description}</p>
                                 </div>
-                                <div className="d-flex  justify-content-end mt-4">
-                                    <button onClick={() => {
-                                        increment()
-                                    }}>+</button>
-                                    <button onClick={() => {
-                                        decrement()
-                                    }}>-</button>
+                                <button onClick={() => {
+                                    increment()
+                                }}>+</button>
+                                <span className="fs-3">{amount}</span>
+                                <button onClick={() => {
+                                    decrement()
+                                }}>-</button>
+                            </div>
+                            <div className="d-flex  justify-content-end mt-4">
+                                <div className="d-flex align-items-center justify-content-center">
                                     <button className="btn btn-sm btn-outline-success" onClick={() => {
                                         addToCart()
                                     }}>Add to Cart</button>
@@ -110,3 +116,7 @@ const Cards = () => {
 }
 
 export default Cards
+
+
+
+

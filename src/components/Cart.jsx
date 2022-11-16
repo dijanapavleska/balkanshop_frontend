@@ -1,18 +1,15 @@
 
 import { Container, Button } from "react-bootstrap";
-import { useCart } from 'react-use-cart';
-import Cards from "./Cards";
-import CartContext from "../CartContext";
-
-
+import { useContext } from "react";
 export default function Cart() {
 
-    // const { cart, setCart } = useContext(CartContext)
-
-
+    const { cart, setCart } = useContext(CartContext)
 
 
     return (
+
+
+
         <Button style={{
             width: '3rem', height: '3rem', position: 'relative', color: 'green', margin: '0em 0em 0em 7em'
         }}
@@ -32,5 +29,6 @@ export default function Cart() {
                     transform: 'translate(25%, 25%)',
                 }}>3</div>
         </Button >
+
     )
 }
