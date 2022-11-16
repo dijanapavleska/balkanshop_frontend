@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react";
+import { Button } from "react-bootstrap";
 import CartContext from "../CartContext";
 
 
@@ -17,7 +18,7 @@ const Cards = () => {
         const data = await response.json();
 
         setProductData(data.data);
-        // console.log(data)
+        console.log(data)
     }
 
     useEffect(() => {
@@ -84,13 +85,13 @@ const Cards = () => {
                                 <div className="">
                                     <p className="card-text">{product.description}</p>
                                 </div>
-                                <button onClick={() => {
+                                <Button onClick={() => {
                                     increment()
-                                }}>+</button>
+                                }}>+</Button>
                                 <span className="fs-3">{amount}</span>
-                                <button onClick={() => {
+                                <Button onClick={() => {
                                     decrement()
-                                }}>-</button>
+                                }}>-</Button>
                             </div>
                             <div className="d-flex  justify-content-end mt-4">
                                 <div className="d-flex align-items-center justify-content-center">
