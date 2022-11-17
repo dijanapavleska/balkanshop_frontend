@@ -2,12 +2,7 @@ import "./styleForm.css";
 
 const ContactUs = () => {
   return (
-    // <div className="container border" style={{
-    //   backgroundImage: `url("https://img.freepik.com/free-photo/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.jpg?w=1060&t=st=1668437757~exp=1668438357~hmac=bb7cdd861137cc2e1dd9266b397009499afcae443e2077a7396363860dceaecc")`,
-    //   backgroundPosition: "center",
-    //   backgroundSize: 'cover',
-    // }}
-    // >
+
     <div className="overlay contact-us" >
 
       <form>
